@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import heroImage from "@/assets/museum-hero.jpg";
 import sculptureImage from "@/assets/sculpture-detail.jpg";
 
@@ -98,12 +98,12 @@ function Index() {
               </a>
             ))}
           </nav>
-          <a
-            href="#enter"
+          <Link
+            to="/museum"
             className="eyebrow border-b border-primary/40 pb-1 !text-primary transition-colors hover:border-primary"
           >
             Enter Museum →
-          </a>
+          </Link>
         </div>
       </header>
 
@@ -127,12 +127,12 @@ function Index() {
                 shaped them.
               </p>
               <div className="mt-10 flex flex-wrap items-center gap-x-10 gap-y-4">
-                <a
-                  href="#enter"
+                <Link
+                  to="/museum"
                   className="eyebrow bg-primary px-8 py-4 !text-primary-foreground transition-opacity hover:opacity-90"
                 >
                   Enter the Museum →
-                </a>
+                </Link>
                 <a
                   href="#timeline"
                   className="eyebrow border-b border-border pb-1 !text-foreground transition-colors hover:border-primary hover:!text-primary"
@@ -208,8 +208,8 @@ function Index() {
           <ul className="mt-12 border-t border-border">
             {ERAS.map((era) => (
               <li key={era.n}>
-                <a
-                  href="#enter"
+                <Link
+                  to="/museum"
                   className="group grid grid-cols-[auto_1fr] items-baseline gap-x-6 gap-y-2 border-b border-border py-7 transition-colors hover:bg-secondary/70 md:grid-cols-[5rem_1.1fr_1fr_auto] md:px-2"
                 >
                   <span className="font-serif text-xl text-muted-foreground transition-colors group-hover:text-primary">
@@ -224,7 +224,7 @@ function Index() {
                   <span className="eyebrow col-span-2 md:col-span-1 md:text-right">
                     {era.years}
                   </span>
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -239,12 +239,12 @@ function Index() {
               Explore India's artistic history through an immersive digital museum where every
               gallery represents a moment in time.
             </p>
-            <a
-              href="#explore"
+            <Link
+              to="/museum"
               className="eyebrow mt-12 inline-block border border-primary px-12 py-5 !text-primary transition-colors hover:bg-primary hover:!text-primary-foreground"
             >
               Enter the Museum →
-            </a>
+            </Link>
           </div>
         </section>
       </main>
