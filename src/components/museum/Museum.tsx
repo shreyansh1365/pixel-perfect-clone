@@ -29,7 +29,7 @@ function Box({
   position,
   size,
   material = ivory,
-  rotation,
+  rotation = [0, 0, 0],
 }: {
   position: [number, number, number];
   size: [number, number, number];
