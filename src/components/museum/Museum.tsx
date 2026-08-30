@@ -185,11 +185,7 @@ function Gallery({ n, title, years, side, z }: (typeof GALLERIES)[number]) {
         <planeGeometry args={[GALLERY_W * 0.45, GALLERY_D * 0.35]} />
         <meshBasicMaterial color="#fffaf0" />
       </mesh>
-      <rectAreaLight
-        position={[cx, WALL_H - 0.4, z]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        args={["#fff6e6", 2.6, GALLERY_W * 0.45, GALLERY_D * 0.35]}
-      />
+      <pointLight position={[cx, WALL_H - 1, z]} intensity={45} distance={26} decay={2} color="#fff4e0" />
 
       {/* doorway arch */}
       <Arch position={[innerX, 0, z]} rotationY={Math.PI / 2} width={doorHalf * 2} height={4.6} />
@@ -306,11 +302,7 @@ function EntranceHall() {
         <planeGeometry args={[12, 8]} />
         <meshBasicMaterial color="#fffaf0" />
       </mesh>
-      <rectAreaLight
-        position={[0, WALL_H + 1.1, (CORRIDOR_START + zFront) / 2]}
-        rotation={[-Math.PI / 2, 0, 0]}
-        args={["#fff6e6", 3, 12, 8]}
-      />
+      <pointLight position={[0, WALL_H, (CORRIDOR_START + zFront) / 2]} intensity={70} distance={34} decay={2} color="#fff4e0" />
 
       <Arch position={[0, 0, CORRIDOR_START]} width={9} height={5.6} />
       <Arch position={[0, 0, zFront]} width={7} height={5.2} />
