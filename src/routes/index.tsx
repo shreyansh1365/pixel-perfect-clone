@@ -174,7 +174,8 @@ function Index() {
               <p className="max-w-2xl text-base leading-relaxed text-muted-foreground md:text-lg">
                 Indian art has evolved over thousands of years, shaped by civilizations,
                 religions, dynasties, cultures and changing forms of expression. What survives is
-                not a single tradition but a long conversation — between region and empire,                 and市 craft, inheritance and invention.
+                not a single tradition but a long conversation — between region and empire,
+                ritual and craft, inheritance and invention.
               </p>
             </div>
 
